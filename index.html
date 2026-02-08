@@ -6,43 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bİ-TEK</title>
 
-    <link rel="stylesheet" href="/css/mainPage.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/announcement.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/activitySlider.css">
-    <link rel="stylesheet" href="/css/PulsarSlider.css">
-    <link rel="stylesheet" href="/pages/deneme.css">
-
-    <script src="js/mainpage.js"></script>
-    <script src="js/activitypage.js"></script>
-    <script src="js/announcement.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/createactivityfirst.js"></script>
-    <script src="js/createactivitypage.js"></script>
-    <script src="js/pulsarslider.js"></script>
-
-    <!-- Duyuru slider için gerekli kütüphaneler -->
-    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-    <!-- Etkinlik Slider için gerekli kütüphane-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-</head>
-
-</body>
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/announcement.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/activityslider.css">
+    <link rel="stylesheet" href="css/PulsarSlider.css"> 
+    </head>
 
 <body>
 
@@ -50,7 +25,7 @@
         <div class="navbar-container">
 
             <div class="logo-container">
-                <img class="logoimg" src="/images/logo.png" alt="Logo">
+                <img class="logoimg" src="images/logo.png" alt="Logo">
                 <p class="logo">Bİ-TEK</p>
             </div>
 
@@ -64,15 +39,12 @@
                 <li><a href="#activity">Etkinlikler</a></li>
                 <li><a href="#info">Duyurular</a></li>
                 <li><a href="#team">PULSAR</a></li>
-                <!-- <li><a href="#members">Üyeler</a></li> eklenmek isterse diye comment-->
                 <li><a href="#contact">İletişim</a></li>
             </ul>
         </div>
     </nav>
     <div class="overlay"></div>
 
-    <!-- HAKKINDA -->
-    <!-- main.js ve main.css içerisinden oluşturuldu -->
     <section id="about">
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
@@ -92,13 +64,8 @@
         </div>
     </section>
 
-
-
-    <!-- ETKİNLİK EKLEMELERİ BURADAN -->
     <section id="activity">
-
         <div class="bg-effect bg-effect-2"></div>
-
         <div class="section-content">
             <h1 class="section-title section-etkinlik">ETKİNLİKLERİMİZ</h1>
             <div class="slide-container">
@@ -135,16 +102,12 @@
         </div>
     </section>
 
-
-
-    <!-- DUYURU EKLEMELERİ BURADAN -->
     <section id="info" class="infoSection infoSecMedia">
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
             <p class="section-title">Duyurular</p>
 
             <div class="container container-announcement">
-
                 <div class="custom-prev">&lt;</div>
                 <div class="custom-next">&gt;</div>
 
@@ -186,30 +149,15 @@
                         </div>
                     </div>
 
-                    <!-- Slide 5 -->
-                    <!-- <div class="post-slide" style="background-image: url('/images/29mayıs2024/29mayısmain.png');">
-                        <div class="post-content">
-                            <h3 class="post-title"><a href="#">DIGITECH Talks</a></h3>
-                            <p class="post-description">Etkinliğimiz hakkında bilgi edinin...</p>
-                            <span class="post-date">29 Mayıs 2024</span>
-                            <a onclick="goToDetails('mayıs29_2024')" class="read-more">Etkinliği gör</a>
-                        </div>
-                    </div> -->
-                    <!-- YENİ DUYURU EKLEMESİ BURADAN -->
-                    <!-- yukardaki duyuru aynısından + o duyurunun etkinliği varsa onu createactivitypage.js ve createactivityfirst.js'de bağlanmalı -->
-
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- PULSAR HAKKINDA KISMI BURADAN -->
     <section id="team">
         <div class="bg-effect bg-effect-2"></div>
         <div class="section-content">
             <h1 class="section-title">PULSAR</h1>
-
             <p class="section-description">
                 &nbsp;&nbsp; Geçtiğimiz yıllarda TÜBİTAK Efficiency Challenge’da sergilediğimiz performansla kendimizi
                 sürekli geliştiriyoruz.
@@ -220,68 +168,32 @@
         </div>
     </section>
 
-
     <div class="section-content section-Pulsar">
-
         <div class="container Maincontainer-slider">
             <div class="PulsarSlide">
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar4.png);">
-                </div>
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar5.png);">
-                </div>
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar.png);">
-                </div>
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar2.png);">
-                </div>
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar3.png);">
-                </div>
-
-                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar.png);">
-                </div>
-
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar4.png);"></div>
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar5.png);"></div>
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar.png);"></div>
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar2.png);"></div>
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar3.png);"></div>
+                <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar.png);"></div>
             </div>
-
             <div class="button">
                 <button class="prev mainbtn prevmain"><i class="fa-solid fa-arrow-left"></i></button>
                 <button class="next mainbtn nextmain"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
-
     </div>
-
-    <!-- kurul eklenirse diye comment
-<section id="members">
-    <div class="bg-effect bg-effect-2"></div>
-    <div class="section-content">
-        <h1 class="section-title">ÜYELER</h1>
-
-        <p class="section-description">
-            &nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum voluptates error repellendus asperiores, obcaecati ullam vel dolores. Quas eaque adipisci enim rem laboriosam. Sequi, sunt! Corrupti cupiditate architecto fugit a.
-        </p>
-    </div>
-</section> -->
 
     <hr>
 
-    <!-- İLETİŞİM KISMI BURADAN -->
-    <!-- contact.css ve contact.js kullanıldı -->
-    <!-- web3forms.com aşamalardan yaptım. -->
     <section id="contact">
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
-
             <h1 class="section-title contact-title">İLETİŞİM İÇİN,</h1>
-
-            <!-- web3forms ile contact olayı yapıldı, maildeki access key yerleştir value'ya -->
             <div class="contact-container">
                 <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-                    <!-- Buraya kullanılacak mail icin key girilmeli. web3forms'tan öğrenebilirsiniz asamaları var -->
+                    
                     <input type="hidden" name="access_key" value="YOURACCESSKEY">
 
                     <div class="form-group">
@@ -305,14 +217,10 @@
         </div>
     </section>
 
-
-    <!-- footer.css kullanıldı -->
     <footer>
         <div class="social">
             <p class="p_footer">Sosyal medya hesaplarından bizi takip edebilirsin</p>
             <ul class="wrapperF">
-
-
                 <a href="https://www.youtube.com/@bitek2561" target="_blank">
                     <li class="icon youtube">
                         <span class="tooltip">Youtube</span>
@@ -331,8 +239,7 @@
                     <li class="icon icu">
                         <span class="tooltip">ICU</span>
                         <span>
-                            <img src="/images/iconICU.png" alt=""
-                                style="width: 50px; height: 50px; border-radius: 50%;">
+                            <img src="/images/iconICU.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
                         </span>
                     </li>
                 </a>
@@ -345,19 +252,17 @@
         </p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="/js/mainPage.js"></script>
-    <script src="/js/announcement.js"></script>
-    <script src="/js/contact.js"></script>
-    <script src="/js/activitySliderIndex.js"></script>
-    <script src="/js/PulsarSlider.js"></script>
-
-    <script src="/js/createactivityfirst.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/mainpage.js"></script>
+    <script src="js/activitypage.js"></script>
+    <script src="js/announcement.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/createactivityfirst.js"></script>
+    <script src="js/createactivitypage.js"></script>
+    <script src="js/pulsarslider.js"></script>
 
 </body>
-
 </html>
