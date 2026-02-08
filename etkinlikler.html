@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bİ-TEK ETKİNLİK</title>
+
+    <!-- Google Font (Exo) -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,900" rel="stylesheet">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="/css/mainPage.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/activityPage.css">
+
+
+    <style>
+        .navbar-container {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo-container {
+            flex: 1;
+            margin-left: auto;
+        }
+
+        .mobile-nav-toggle {
+            margin-left: auto;
+            margin-right:20px ;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <div class="logo-container">
+                <img class="logoimg" src="/images/logo.png" alt="Logo">
+                <p class="logo">Bİ-TEK</p>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#" onclick="goToDetails('about')">Hakkında</a></li>
+                <li><a href="#" onclick="goToDetails('activity')">Etkinlikler</a></li>
+                <li><a href="#" onclick="goToDetails('info')">Duyurular</a></li>
+                <li><a href="#" onclick="goToDetails('team')">PULSAR</a></li>
+                <!-- <li><a href="#" onclick="goToDetails('members')">Üyeler</a></li> -->
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <div class="overlay"></div>
+
+    <!-- etkinlik adı yazacak -->
+    <p class="section-title activity-title" id="eventTitle" style="margin-top: 120px; font-size: 35px; text-align: center;"> </p>
+
+
+    <!-- Ana Konteyner -->
+    <div class="container-wrapper">
+
+        <div class="image-container">
+            <img id="mainImage" src="" alt="Ana Resim">    
+            <button class="toggle-btn">&gt;</button> <!-- Açma Butonu -->    
+        </div>
+
+        <!-- Galeri İçin Açılır Alan -->
+        <div class="gallery-overlay">
+            <button class="close-btn">&times;</button> <!-- Kapatma Butonu -->
+            <div class="gallery" id="galleryContainer">
+                <!-- JavaScript ile buraya dinamik olarak içerik eklenecek -->
+            </div>
+        </div>
+    </div>
+
+    <p class="activityDes" id="eventDescription"></p>
+
+
+    <hr style="color:white;">
+
+        <!-- İLETİŞİM KISMI BURADAN -->
+    <!-- contact.css ve contact.js kullanıldı -->
+    <section id="contact">
+        <div class="bg-effect bg-effect-1"></div>
+        <div class="section-content">
+        
+            <h1 class="section-title contact-title">Sorularınız için bizimle iletişime geçebilirsiniz:</h1>
+
+            <!-- web3forms ile contact olayı yapıldı -->
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="YOURACCESSKEY">
+        
+                    <div class="form-group">
+                        <label for="name">İsim:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">Mesajınız:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+        
+                    <button type="submit" class="buttonContact">Mesaj Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer.css kullanıldı -->
+    <footer>
+        <div class="social">
+            <p class="p_footer">Sosyal medya hesaplarından bizi takip edebilirsin</p>
+            <ul class="wrapperF">
+  
+  
+  
+                <a href="https://www.youtube.com/@bitek2561" target="_blank">
+                <li class="icon youtube">
+                    <span class="tooltip">Youtube</span>
+                    <span><i class="fab fa-youtube"></i></span>
+                </li>
+                </a>
+  
+                <a href="https://www.instagram.com/ticaretbitek/" target="_blank">
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+                </a>
+  
+                <a href="https://ticaret.edu.tr/" target="_blank">
+                <li class="icon icu">
+                    <span class="tooltip">ICU</span>
+                    <span>
+                        <img src="/images/iconICU.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+                    </span>
+                </li>
+                </a>
+            </ul>
+        </div>
+        <div class="final_text"></div>
+        <p class="p_footer">
+            Etkinliklerimizden ilk önce sen haberdar ol!
+            <br> Merak ettiklerin veya düşüncelerin için İLETİŞİM sekmesinden bize ulaşabilirsin
+        </p>
+    </footer>
+    
+
+    <script src="/js/mainPage.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/activityPage.js"></script>
+    <script src="/js/createActivityPage.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fancybox JS galeride kullanıldı-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- galerideki fancybox özelliği için eklendi -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Fancybox.bind("[data-fancybox='gallery']", {
+                Toolbar: {
+                    display: [
+                        "zoom",
+                        "fullscreen",
+                        "thumbs",
+                        "slideShow",
+                        "share",
+                        "close"
+                    ]
+                },
+                loop: true,
+                protect: true
+            });
+        });
+    </script>
+
+</body>
+</html>

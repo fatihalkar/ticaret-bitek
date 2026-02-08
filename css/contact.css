@@ -1,0 +1,125 @@
+.contact-container {
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    height: 430px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+#contact{
+    align-items:stretch !important;
+    padding-bottom: 20px;
+}
+
+#contact::after {
+    content: "";
+    background: url('/images/logo.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+    top: 5%;
+
+    display: block;
+    margin-left: -900px;
+    margin-right: auto;
+      
+    width: 550px;
+    height: 550px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .8rem;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    background-color: #1d1d1d44;
+    color: white;
+    font-size: 1rem;
+
+    max-height: 220px;
+    max-width: 1250px;
+    overflow-y: auto;
+}
+
+.buttonContact {
+    background-color: #000000de;
+    color: white;
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.buttonContact:hover {
+    background-color: #0c0c0ca4;
+}
+
+.contact-title {
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform:none;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: calc(100% - 40px) !important;
+        max-width: 100%;
+        height:200px;
+        padding: 15px;
+        position: relative;
+    }
+
+    .activity-title {
+        font-size: 18px !important;
+        margin-left: 25px !important;
+    }
+
+    .contact-title {
+        font-size: 17px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .buttonContact {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #contact::after {
+        width: 400px;
+        height: 400px;
+        opacity: 0.05;
+        top: 50%;
+        left: 50%;
+        margin-left: 0px !important;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: -1;
+    }
+}

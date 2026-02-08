@@ -1,0 +1,50 @@
+
+ @media screen and (max-width:960px){
+    .Maincontainer-slider{
+        margin-top: -15px;
+
+        width: 75%;
+        height: calc(75vw * 0.6);
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .section-Pulsar{
+        margin-bottom: 50px;
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width:647px){
+    .Maincontainer-slider{
+        margin-top: -75px;
+        width: 85%;
+    }
+
+    .section-Pulsar{
+        margin-bottom: 80px;
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width:415px){
+    .Maincontainer-slider{
+        margin-top: -90px;
+        width: 85%;
+    }
+
+    .section-Pulsar{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:325px){
+    .Maincontainer-slider{
+        margin-top: -110px;
+        width: 75%;
+    }
+
+    .section-Pulsar{
+        margin-bottom: 110px;
+    }
+}

@@ -1,0 +1,25 @@
+#about {
+    position: relative;
+    margin-top: 120px;
+}
+
+#about::after {
+    content: "";
+    background: url('/images/logo.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 400px;
+    height: 400px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+
+    #about::after {
+        width: 300px;  
+        height: 300px;
+    }
+}

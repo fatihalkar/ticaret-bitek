@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+:root {
+    --gradient: linear-gradient(45deg, #f7f7f7, #dddb42, #fcfcfc , #f9fc3f);
+}
+@keyframes textGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+*:focus,
+*:active {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.582);
+    border-top: aliceblue 3px solid;
+}
+
+
+.p_footer {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    background: var(--gradient);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: textGradient 5s linear infinite;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@supports not (-webkit-background-clip: text) {
+    .p_footer {
+        color: white;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.wrapperF .icon {
+    position: relative;
+    background: aliceblue;
+    color: rgb(0, 0, 15);
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperF .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: aliceblue;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperF .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: aliceblue;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperF .icon:hover .tooltip {
+top: 60px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.wrapperF .icon:hover span,
+.wrapperF .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapperF .youtube:hover,
+.wrapperF .youtube:hover .tooltip,
+.wrapperF .youtube:hover .tooltip::before {
+background: #b13a3a;
+color: aliceblue;
+}
+
+.wrapperF .icu:hover,
+.wrapperF .icu:hover .tooltip,
+.wrapperF .icu:hover .tooltip::before {
+    background: rgba(0, 0, 0, 0.829);
+    color: aliceblue;
+}
+
+.wrapperF .instagram:hover,
+.wrapperF .instagram:hover .tooltip,
+.wrapperF .instagram:hover .tooltip::before {
+    background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90% );
+    color: aliceblue;
+}
