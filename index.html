@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,8 @@
     <!-- Duyuru slider için gerekli kütüphaneler -->
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -26,12 +28,23 @@
 
 
     <!-- Etkinlik Slider için gerekli kütüphane-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
+<script src="js/mainpage.js"></script>
+<script src="js/activitypage.js"></script>
+<script src="js/announcement.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/createactivityfirst.js"></script>
+<script src="js/createactivitypage.js"></script>
+<script src="js/pulsarslider.js"></script>
+</body>
+
 <body>
-    
+
     <nav class="navbar">
         <div class="navbar-container">
 
@@ -63,11 +76,18 @@
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
             <h3 class="section-title">BİZ KİMİZ?</h3>
-            <p class="section-description">&nbsp;&nbsp; İstanbul Ticaret Üniversitesi Bilgi ve Teknoloji Topluluğu olarak, #MilliTeknolojiHamlesi’ne dayanan ilkelerimiz doğrultusunda bilgi ve teknoloji odaklı söyleşiler, geziler ve teknik eğitimler düzenliyoruz. Bu eğitimleri yaptığı projelerle destekleyen bir öğrenci topluluğuyuz.</p>
-        
+            <p class="section-description">&nbsp;&nbsp; İstanbul Ticaret Üniversitesi Bilgi ve Teknoloji Topluluğu
+                olarak, #MilliTeknolojiHamlesi’ne dayanan ilkelerimiz doğrultusunda bilgi ve teknoloji odaklı
+                söyleşiler, geziler ve teknik eğitimler düzenliyoruz. Bu eğitimleri yaptığı projelerle destekleyen bir
+                öğrenci topluluğuyuz.</p>
+
             <h1 class="section-title">Amacımız</h1>
-            <p class="section-description desc-second">&nbsp;&nbsp; Topluluk olarak amacımız, öğrencilerin girişken ve yenilikçi bireyler olarak kendilerini geliştirmelerine destek olmaktır. Bu doğrultuda, onların yaratıcı projeler geliştirmelerine teşvik ediyor ve farklı etkinlikler düzenleyerek fikirlerine destek sağlıyoruz. <br>
-            &nbsp;&nbsp; Amacımız, öğrencilerin sadece akademik başarılarıyla değil, aynı zamanda girişimci ruhlarıyla da öne çıkmalarını desteklemek.</p>
+            <p class="section-description desc-second">&nbsp;&nbsp; Topluluk olarak amacımız, öğrencilerin girişken ve
+                yenilikçi bireyler olarak kendilerini geliştirmelerine destek olmaktır. Bu doğrultuda, onların yaratıcı
+                projeler geliştirmelerine teşvik ediyor ve farklı etkinlikler düzenleyerek fikirlerine destek
+                sağlıyoruz. <br>
+                &nbsp;&nbsp; Amacımız, öğrencilerin sadece akademik başarılarıyla değil, aynı zamanda girişimci
+                ruhlarıyla da öne çıkmalarını desteklemek.</p>
         </div>
     </section>
 
@@ -77,41 +97,42 @@
     <section id="activity">
 
         <div class="bg-effect bg-effect-2"></div>
-        
+
         <div class="section-content">
             <h1 class="section-title section-etkinlik">ETKİNLİKLERİMİZ</h1>
-        <div class="slide-container">
-            <div class="slide-grid">
-              <div class="image-container" id="image-container"></div>
-              <div class="slide-content">
-                <div>
-                  <h3 class="name" id="name"></h3>
-                  <p class="designation" id="designation"></p>
-                  <p class="quote" id="quote"></p>
-                  <button id="detail-button" class="arrow-button" style="width: 130px; height:27px; color:antiquewhite; margin-top: 10px;">
-                    Detayları Gör
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    </svg>
-                  </button>
+            <div class="slide-container">
+                <div class="slide-grid">
+                    <div class="image-container" id="image-container"></div>
+                    <div class="slide-content">
+                        <div>
+                            <h3 class="name" id="name"></h3>
+                            <p class="designation" id="designation"></p>
+                            <p class="quote" id="quote"></p>
+                            <button id="detail-button" class="arrow-button"
+                                style="width: 130px; height:27px; color:antiquewhite; margin-top: 10px;">
+                                Detayları Gör
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="arrow-buttons">
+                            <button class="arrow-button prev-button" id="prev-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                </svg>
+                            </button>
+                            <button class="arrow-button next-button" id="next-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="arrow-buttons">
-                  <button class="arrow-button prev-button" id="prev-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                    </svg>
-                  </button>
-                  <button class="arrow-button next-button" id="next-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    </svg>
-                  </button>
-              </div>
             </div>
-          </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -120,14 +141,14 @@
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
             <p class="section-title">Duyurular</p>
-            
+
             <div class="container container-announcement">
 
                 <div class="custom-prev">&lt;</div>
                 <div class="custom-next">&gt;</div>
-            
+
                 <div id="news-slider" class="owl-carousel">
-            
+
                     <div class="post-slide" style="background-image: url('/images/22ocak2025/22ocakmain.jpg');">
                         <div class="post-content">
                             <h3 class="post-title"><a href="#">Swift UI - 101</a></h3>
@@ -136,7 +157,7 @@
                             <a onclick="goToDetails('ocak22_2025')" class="read-more">Etkinliği gör</a>
                         </div>
                     </div>
-            
+
                     <div class="post-slide" style="background-image: url('/images/19mart2025/19martmain.jpg');">
                         <div class="post-content">
                             <h3 class="post-title"><a href="#">YILDIZ Holding ile Buluşma</a></h3>
@@ -145,7 +166,7 @@
                             <a onclick="goToDetails('mart19_2025')" class="read-more">Etkinliği gör</a>
                         </div>
                     </div>
-            
+
                     <div class="post-slide" style="background-image: url('/images/14ekim2024/14ekimmain.jpg');">
                         <div class="post-content">
                             <h3 class="post-title"><a href="#">Bİ-TEK Tanışma</a></h3>
@@ -175,7 +196,7 @@
                     </div> -->
                     <!-- YENİ DUYURU EKLEMESİ BURADAN -->
                     <!-- yukardaki duyuru aynısından + o duyurunun etkinliği varsa onu createactivitypage.js ve createactivityfirst.js'de bağlanmalı -->
-                    
+
                 </div>
             </div>
         </div>
@@ -189,17 +210,19 @@
             <h1 class="section-title">PULSAR</h1>
 
             <p class="section-description">
-                &nbsp;&nbsp; Geçtiğimiz yıllarda TÜBİTAK Efficiency Challenge’da sergilediğimiz performansla kendimizi sürekli geliştiriyoruz.
+                &nbsp;&nbsp; Geçtiğimiz yıllarda TÜBİTAK Efficiency Challenge’da sergilediğimiz performansla kendimizi
+                sürekli geliştiriyoruz.
                 <br>
-                &nbsp;&nbsp; Bu sene daha da güçlü, tecrübeli ve hedeflerimize odaklı bir şekilde yarışmaya hazırlanıyoruz.
+                &nbsp;&nbsp; Bu sene daha da güçlü, tecrübeli ve hedeflerimize odaklı bir şekilde yarışmaya
+                hazırlanıyoruz.
             </p>
         </div>
     </section>
 
-            
+
     <div class="section-content section-Pulsar">
-    
-        <div class="container Maincontainer-slider">    
+
+        <div class="container Maincontainer-slider">
             <div class="PulsarSlide">
 
                 <div class="fotoPulsar" style="background-image: url(/images/pulsarPhotos/pulsar4.png);">
@@ -230,7 +253,7 @@
 
     </div>
 
-<!-- kurul eklenirse diye comment
+    <!-- kurul eklenirse diye comment
 <section id="members">
     <div class="bg-effect bg-effect-2"></div>
     <div class="section-content">
@@ -246,11 +269,11 @@
 
     <!-- İLETİŞİM KISMI BURADAN -->
     <!-- contact.css ve contact.js kullanıldı -->
-     <!-- web3forms.com aşamalardan yaptım. -->
+    <!-- web3forms.com aşamalardan yaptım. -->
     <section id="contact">
         <div class="bg-effect bg-effect-1"></div>
         <div class="section-content">
-        
+
             <h1 class="section-title contact-title">İLETİŞİM İÇİN,</h1>
 
             <!-- web3forms ile contact olayı yapıldı, maildeki access key yerleştir value'ya -->
@@ -258,23 +281,23 @@
                 <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
                     <!-- Buraya kullanılacak mail icin key girilmeli. web3forms'tan öğrenebilirsiniz asamaları var -->
-                    <input type="hidden" name="access_key" value="YOURACCESSKEY">    
-        
+                    <input type="hidden" name="access_key" value="YOURACCESSKEY">
+
                     <div class="form-group">
                         <label for="name">İsim:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-        
+
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-        
+
                     <div class="form-group">
                         <label for="message">Mesajınız:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-        
+
                     <button type="submit" class="buttonContact">Mesaj Gönder</button>
                 </form>
             </div>
@@ -287,30 +310,31 @@
         <div class="social">
             <p class="p_footer">Sosyal medya hesaplarından bizi takip edebilirsin</p>
             <ul class="wrapperF">
-  
-  
+
+
                 <a href="https://www.youtube.com/@bitek2561" target="_blank">
                     <li class="icon youtube">
                         <span class="tooltip">Youtube</span>
                         <span><i class="fab fa-youtube"></i></span>
                     </li>
-                    </a>
-      
-                    <a href="https://www.instagram.com/ticaretbitek/" target="_blank">
+                </a>
+
+                <a href="https://www.instagram.com/ticaretbitek/" target="_blank">
                     <li class="icon instagram">
                         <span class="tooltip">Instagram</span>
                         <span><i class="fab fa-instagram"></i></span>
                     </li>
-                    </a>
-      
-                    <a href="https://ticaret.edu.tr/" target="_blank">
-                        <li class="icon icu">
-                            <span class="tooltip">ICU</span>
-                            <span>
-                                <img src="/images/iconICU.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-                            </span>
-                        </li>
-                    </a>
+                </a>
+
+                <a href="https://ticaret.edu.tr/" target="_blank">
+                    <li class="icon icu">
+                        <span class="tooltip">ICU</span>
+                        <span>
+                            <img src="/images/iconICU.png" alt=""
+                                style="width: 50px; height: 50px; border-radius: 50%;">
+                        </span>
+                    </li>
+                </a>
             </ul>
         </div>
         <div class="final_text"></div>
@@ -319,7 +343,7 @@
             <br> Merak ettiklerin veya düşüncelerin için İLETİŞİM sekmesinden bize ulaşabilirsin
         </p>
     </footer>
-    
+
 
     <script src="/js/mainPage.js"></script>
     <script src="/js/announcement.js"></script>
@@ -329,8 +353,10 @@
 
     <script src="/js/createactivityfirst.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
-</body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+</body>
+
+</html>
